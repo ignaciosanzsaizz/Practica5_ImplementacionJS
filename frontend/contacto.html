@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Atilamazon</title>
+<link rel="stylesheet" href="index.css">
+<script src="main.js" defer></script>
+
+</head>
+
+<body>
+
+<header class="header">
+
+<h1 id="titulo">Atilamazon</h1>
+
+<nav>
+<ul class="contenedor">
+
+<li><a href="index.html">Inicio</a></li>
+
+<li class="submenu">
+  <a href="productos.html">Productos</a>
+  <ul class="dropdown">
+    <li><a href="productos.html#camisetas">Camisetas</a></li>
+    <li><a href="productos.html#balones">Balones</a></li>
+    <li><a href="productos.html#botas">Botas</a></li>
+  </ul>
+</li>
+
+<li><a href="pedidos.html">Pedidos</a></li>
+<li><a href="carrito.html">Carrito</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+
+</ul>
+</nav>
+
+</header>
+
+<section>
+
+<h2>Formulario de pedido  </h2>
+
+<form action="#" method="post">
+
+<!-- DATOS PERSONALES -->
+<fieldset>
+<legend>Datos personales</legend>
+
+<p>
+<label for="name">Nombre:</label><br>
+<input type="text" id="name" name="name" required>
+</p>
+
+<p>
+<label for="phone">Teléfono:</label><br>
+<input type="tel" id="phone" name="phone" required>
+</p>
+
+<p>
+<label for="email">Email:</label><br>
+<input type="email" id="email" name="email" required>
+</p>
+
+</fieldset>
+
+<!-- PRODUCTO -->
+<fieldset>
+<legend>Producto</legend>
+
+<p>
+<label for="modelo">Producto:</label><br>
+<select id="modelo" name="modelo" required>
+<option value="">Selecciona</option>
+<option>Balón</option>
+<option>Botas</option>
+<option>Camiseta</option>
+</select>
+</p>
+
+<p>
+Talla:<br>
+
+<input type="radio" name="talla" value="S" required> S
+<input type="radio" name="talla" value="M"> M
+<input type="radio" name="talla" value="L"> L
+
+</p>
+
+<p>
+<label for="color">Color:</label><br>
+<input type="color" id="color" name="color" required>
+</p>
+
+<p>
+<label for="cantidad">Cantidad:</label><br>
+<input type="number" id="cantidad" name="cantidad" min="1" max="5" required>
+</p>
+
+<p>
+Extras:<br>
+
+<input type="checkbox" name="extra1"> Personalización<br>
+<input type="checkbox" name="extra2"> Envío rápido<br>
+<input type="checkbox" name="extra3"> Embalaje regalo
+
+</p>
+
+</fieldset>
+
+<!-- ENTREGA -->
+<fieldset>
+<legend>Entrega</legend>
+
+<p>
+<label for="fecha">Fecha:</label><br>
+<input type="date" id="fecha" name="fecha" required>
+</p>
+
+<p>
+<label for="comentarios">Instrucciones:</label><br>
+<textarea id="comentarios" name="comentarios"></textarea>
+</p>
+
+</fieldset>
+
+<!-- BOTONES -->
+<fieldset>
+
+<button type="submit">Enviar pedido</button>
+<button type="reset">Borrar</button>
+
+</fieldset>
+
+</form>
+
+<!-- EXTRA: imagen y video -->
+<h3>Te puede interesar  </h3>
+<div class="videos">
+
+  <iframe src="https://www.youtube.com/embed/HA7hWH2GLjI" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/Nf66F4TK66I" allowfullscreen></iframe>
+
+  <iframe src="https://www.youtube.com/embed/ttDbSrXnCH4" allowfullscreen></iframe>
+
+</div>
+
+</section>
+
+</body>
+</html>
